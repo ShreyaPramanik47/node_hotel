@@ -1,2 +1,3 @@
 # node module will not track
 node_modules/
+.env
