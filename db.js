@@ -3,8 +3,8 @@ require('dotenv').config();
 
 // Define the MongoDB connection URL
 // const mongoURL = 'mongodb://127.0.0.1:27017/ai-realestate-friend'
-// const mongoURL = process.env.MONGODB_URL_LOCAL;
-const mongoURL = process.env.MONGODB_URL;
+const mongoURL = process.env.MONGODB_URL_LOCAL;
+// const mongoURL = process.env.MONGODB_URL;
 
 // Set up Mongodb connection
 // mongoose.connect(mongoURL,{

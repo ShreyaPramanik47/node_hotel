@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+const bcrypt= require('bcrypt');
 // Define the Person schema
 const personSchema= new mongoose.Schema({
     name:{
@@ -29,8 +29,18 @@ const personSchema= new mongoose.Schema({
     salary:{
         type:Number,
         required:true
+    },
+    username: {
+        required: true,
+        type: String
+    },
+    password: {
+        required: true,
+        type: String
     }
 });
+
+personSchema.pre('save',)
 
 // Create Person model
 const person = mongoose.model('person',personSchema);
